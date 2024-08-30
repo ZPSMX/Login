@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Login.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout Padding="50" BackgroundColor="#797A6D">
+
+        <Label
+            Margin="0,0,0,10"
+            FontAttributes="Bold"
+            FontFamily="Monday"
+            FontSize="40"
+            HorizontalTextAlignment="Center"
+            Text="Login"
+            TextColor="White" />
+
+        <Frame
+            Margin="2,0,2,0"
+            BackgroundColor="#F4F2DA"
+            BorderColor="White">
+
+            <VerticalStackLayout Padding="30">
+                <Label Text="Usuario" TextColor="Black" />
+                <Entry
+                    x:Name="entradaUsuario"
+                    Margin="0,10,0,0"
+                    FontSize="12"
+                    Placeholder="Introduce tu usuario"
+                    PlaceholderColor="#A2A191"
+                    TextColor="Black" />
+
+                <Label Text="Contrasena" TextColor="Black" />
+                <Entry
+                    x:Name="entradaContrasena"
+                    Margin="0,10,0,0"
+                    FontSize="12"
+                    IsPassword="True"
+                    Placeholder="Introduce tu contrasena"
+                    PlaceholderColor="#A2A191"
+                    TextColor="Black" />
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <Button
+            Margin="0,20,0,10"
+            BackgroundColor="YellowGreen"
+            BorderColor="Black"
+            Clicked="OnLoginClicked"
+            CornerRadius="20"
+            FontAttributes="Bold"
+            FontSize="15"
+            HeightRequest="40"
+            HorizontalOptions="Center"
+            Text="Entrar"
+            TextColor="White"
+            WidthRequest="150" />
+
+        <Button
+            BackgroundColor="#797A6D"
+            BorderColor="White"
+            BorderWidth=".5"
+            Clicked="NuevoUsuario_Cliked"
+            HeightRequest="50"
+            Text="Agregar un nuevo usuario."
+            TextColor="White"
+            WidthRequest="200" />
+
+        <Label
+            Padding="0,10,0,0"
+            FontSize="10"
+            HorizontalTextAlignment="Center"
+            Text="Made by SkullGreenDev"
+            TextColor="Black" />
+
+    </VerticalStackLayout>
+</ContentPage>

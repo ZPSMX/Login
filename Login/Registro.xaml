@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Login.Registro"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <VerticalStackLayout Padding="50" BackgroundColor="#434249">
+
+        <Label
+            Margin="0,0,0,10"
+            FontAttributes="Bold"
+            FontFamily="Monday"
+            FontSize="40"
+            HorizontalTextAlignment="Center"
+            Text="Nuevo registro"
+            TextColor="White" />
+
+        <Frame
+            Margin="2,0,2,0"
+            BackgroundColor="#F4F2DA"
+            BorderColor="White">
+
+            <VerticalStackLayout Padding="30">
+                <Label Text="Usuario" TextColor="Black" />
+                <Entry
+                    x:Name="registroUsuario"
+                    Margin="0,10,0,0"
+                    FontSize="12"
+                    Placeholder="Introduce tu usuario"
+                    PlaceholderColor="#A2A191"
+                    TextColor="Black" />
+
+                <Label Text="Contrasena" TextColor="Black" />
+                <Entry
+                    x:Name="registroContrasena"
+                    Margin="0,10,0,0"
+                    FontSize="12"
+                    IsPassword="True"
+                    Placeholder="Introduce tu contrasena"
+                    PlaceholderColor="#A2A191"
+                    TextColor="Black" />
+                <Label
+                    Margin="0,10,0,0"
+                    HorizontalTextAlignment="Center"
+                    Text="Asegurate de que tu usuario y contrasena esten escritos correctamente"
+                    TextColor=" Blue" />
+            </VerticalStackLayout>
+
+        </Frame>
+
+
+        <Button
+            Margin="0,20,0,10"
+            BackgroundColor="YellowGreen"
+            BorderColor="Black"
+            Clicked="Registrar_Clicked"
+            CornerRadius="20"
+            FontAttributes="Bold"
+            FontSize="15"
+            HeightRequest="40"
+            HorizontalOptions="Center"
+            Text="Enviar"
+            TextColor="White"
+            WidthRequest="150" />
+
+
+        <Label
+            Padding="0,10,0,0"
+            FontSize="10"
+            HorizontalTextAlignment="Center"
+            Text="Made by SkullGreenDev"
+            TextColor="Black" />
+
+    </VerticalStackLayout>
+</ContentPage>
